@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HH - Media Inquiry</title>
+    <link rel="icon" href="images/logo2.PNG" />
+  </head>
+  <style>
+    body {
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-image: url("images/gunsbg2.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      font-family: "Trebuchet MS";
+    }
+    .form {
+      max-height: 1500px;
+      background-color: hsla(0, 0%, 0%, 0.685);
+      width: 600px;
+      color: white;
+      padding: 20px 20px;
+    }
+    form {
+      margin-top: 80px;
+    }
+    ::placeholder {
+      color: rgb(14, 13, 13);
+      opacity: 0.7; /* Firefox */
+    }
+    .input1 {
+      font-weight: 700;
+      border: none;
+      margin-top: 10px;
+      font-size: 1.1rem;
+      width: 80%;
+      padding: 10px;
+      background-color: hsla(0, 0%, 100%, 0.445);
+    }
+    .input2 {
+      font-weight: 700;
+      border: none;
+      margin-top: 10px;
+      font-size: 1.1rem;
+      width: 40%;
+      padding: 10px;
+      background-color: hsla(0, 0%, 100%, 0.445);
+    }
+    label {
+      font-size: 1.2rem;
+    }
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6 {
+      margin-top: 30px;
+    }
+    .p7 {
+      margin-top: 40px;
+    }
+    .input4 {
+      height: 15vh;
+      font-weight: 700;
+      border: none;
+      margin-top: 10px;
+      font-size: 1.1rem;
+      width: 80%;
+      padding: 10px;
+      background-color: hsla(0, 0%, 100%, 0.445);
+    }
+    .input3 {
+      margin-top: 10px;
+    }
+    .btn {
+      border: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      font-family: "Trebuchet MS";
+      cursor: pointer;
+      background-color: hsla(0, 100%, 52%, 0.959);
+      max-height: 50px;
+      margin-top: 13px;
+      margin-left: 35%;
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;   
+    }
+    .message {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 554px){
+        .input1,.input2,.input3,.input4{
+           font-size: .8rem; 
+        }
+    }
+  </style>
+  <body>
+    <div class="form">
+      <h1>Media Inquiry</h1>
+      <p>
+        THIS FORM IS FOR MEDIA INQUIRIES ONLY. IF YOU ARE A MEMBER OF THE MEDIA
+        (PRINT, DIGITAL, PODCAST, TV OR FILM), USE THIS FORM TO SUBMIT YOUR
+        INFORMATION AND WE WILL ENSURE IT GETS TO OUR PUBLIC INFORMATION
+        OFFICER. ALL OTHER SUBMISSIONS WILL NOT BE ACCEPTED. Thank you, Guido
+      </p>
+      <form>
+        <div class="p1">
+          <label for="Name">Name</label><br />
+          <input
+            type="text"
+            id="Name"
+            class="input1"
+            placeholder="first name"
+          />
+          <input type="text" id="Name" class="input1" placeholder="last name" />
+        </div>
+        <div class="p2">
+          <label for="Media">Media Organization Name</label><br />
+          <input
+            type="text"
+            id="Media"
+            class="input2"
+            placeholder="Eg - Times India .. "
+          />
+        </div>
+        <div class="p3">
+          <label for="Phone">Area code - Number</label><br />
+          <input type="text" class="input2" placeholder="area code" /> -
+          <input type="text" class="input2" placeholder="number" />
+        </div>
+        <div class="p4">
+          <label for="Email">Email Address</label><br />
+          <input type="text" class="input1" placeholder="Example@gmail.com" />
+        </div>
+        <div class="p5">
+          <label for="Date">Date Requested</label><br />
+          <input type="date" class="input2" />
+        </div>
+        <div class="p6">
+          <label for="Type">Media Type</label><br />
+          <input type="radio" name="select" id="Type" class="input3" />TV/Film
+          <br />
+          <input type="radio" name="select" id="Type" class="input3" />Newspaper
+          <br />
+          <input type="radio" name="select" id="Type" class="input3" />Magazine
+          <br />
+          <input
+            type="radio"
+            name="select"
+            id="Type"
+            class="input3"
+          />Radio/Podcast <br />
+          <input type="radio" name="select" id="Type" class="input3" />Other
+        </div>
+        <div class="p7">
+          <label for="Describe">Please Describe Request</label><br />
+          <textarea
+            name="Describe"
+            id="Describe"
+            class="input4"
+            placeholder="Type here..."
+          ></textarea>
+        </div>
+        <p class="message">
+          Your completed request will be responded to within 24 hours. If this
+          is an urgent request due to a deadline, or other, please indicate that
+          in the message body.
+        </p>
+        <a href="contact.html" class="btn">SUBMIT</a>
+      </form>
+    </div>
+  </body>
+</html>

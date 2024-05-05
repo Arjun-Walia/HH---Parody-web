@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HH - Contact Form</title>
+    <link rel="icon" href="images/logo2.PNG" />
+</head>
+<style>
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url("images/gunsbg.avif");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        font-family: "Trebuchet MS";
+    }
+
+    .form {
+        max-height: 2000px;
+        background-color: hsla(0, 0%, 100%, 0.411);
+        width: 600px;
+        color: black;
+        padding: 20px 20px;
+    }
+
+    form {
+        margin-top: 80px;
+    }
+
+    .input1 {
+        font-weight: 700;
+        border: none;
+        margin-top: 10px;
+        font-size: 1.1rem;
+        width: 80%;
+        padding: 10px;
+        background-color: hsla(0, 0%, 100%, 0.445);
+    }
+
+    .l2 {
+        margin-top: 30px;
+    }
+
+    .input3 {
+        font-weight: 700;
+        border: none;
+        margin-top: 30px;
+        font-size: 1.1rem;
+        width: 70%;
+        height: 15vh;
+        padding: 10px;
+        background-color: hsla(0, 0%, 100%, 0.445);
+    }
+
+    .input2 {
+        font-weight: 700;
+        border: none;
+        margin-top: 10px;
+        font-size: 1.1rem;
+        width: 40%;
+        padding: 10px;
+        background-color: hsla(0, 0%, 100%, 0.445);
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6 {
+        margin-top: 30px;
+    }
+
+    .btn {
+        border: none;
+        font-size: 1rem;
+        border-radius: 5px;
+        font-family: "Trebuchet MS";
+        cursor: pointer;
+        background-color: hsla(0, 100%, 52%, 0.959);
+        max-height: 50px;
+        margin-top: 43px;
+        text-align: center;
+        margin-left: 35%;
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+
+    .bottom {
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+    <div class="form">
+        <h1>General Inquiries & Comments</h1>
+        <p>
+            This form is 100% compliant with HIPPA (Hitman Information Privacy &
+            Protection Act of 1964). You are free to use this form for any of the
+            following mentioned departments. Please note, if you do choose more than
+            3 selections, your information will be forwarded to our Automotive
+            Extended Warranty Division(s). MEDIA INQUIRIES WELCOMED.
+        </p>
+        <form>
+            <div class="p1">
+                <label for="Name">Name</label><br />
+                <input type="text" id="Name" class="input1" placeholder="first name" />
+                <input type="text" id="Name" class="input1" placeholder="last name" />
+            </div>
+            <div class="p2">
+                <label for="Phone">Area code - Number</label><br />
+                <input type="text" class="input2" placeholder="area code" /> -
+                <input type="text" class="input2" placeholder="number (optional)" />
+            </div>
+            <div class="p3">
+                <label for="Email">Email Address</label><br />
+                <input type="text" class="input1" placeholder="Example@gmail.com" />
+            </div>
+            <div class="p4">
+                <label for="Date">DOB (18 or older)</label><br />
+                <input type="date" class="input2" />
+            </div>
+            <div class="p5">
+                <label for="Address">Address</label><br>
+                <input type="text" placeholder="street address" class="input1" id="Address"><br>
+                <input type="text" placeholder="street address 2" class="input1" id="Address"><br>
+                <input type="text" placeholder="city" class="input2" id="Address">
+                <input type="text" placeholder="state" class="input2" id="Address"><br>
+                <input type="text" placeholder="zip code" class="input1" id="Address">
+            </div>
+            <div class="p6">
+                <label for="Text" class="l2">If you have a valid question or comment for Hire Hitman, type it in the box
+                    below. Stupid
+                    or unintelligible comments will be hard printed out multiple times and burned in the community fire
+                    pit.</label><br>
+                <textarea name="t1" id="Text" class="input3" placeholder="Type here..."></textarea>
+            </div>
+            <div class="bottom">
+                <p>YOUR PRIVACY IS IMPORTANT TO US - This added step is required to maintain 100% compliance with HIPPA
+                    (Hitman Information Privacy & Protection Act of 1964), capisce.</p>
+                <a href="contact.html" class="btn">SUBMIT</a>
+            </div>
+    </div>
+</body>
+
+</html>

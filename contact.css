@@ -1,0 +1,214 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS";
+  margin: 0;
+  padding: 0;
+  overflow: hidden visible;
+}
+.container1 {
+  display: flex;
+  justify-content: right;
+  max-height: 10vh;
+  max-width: 100%;
+  padding: 10px;
+}
+.heading {
+  font-size: 3rem;
+  font-family: "Trebuchet MS";
+}
+.container1 span {
+  text-align: left;
+  flex: content;
+  font-family: "Trebuchet MS";
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+.container1 img {
+  justify-content: left;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar li a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar li a:hover {
+  background-color: grey;
+}
+
+.navbar {
+  margin-top: 15px;
+  margin-right: 30px;
+}
+nav svg {
+  fill: var(--text-color);
+}
+#sidebar-active {
+  display: none;
+}
+.open-sidebar-button,
+.close-sidebar-button {
+  display: none;
+  fill: white;
+}
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  color: white;
+}
+.inquiry-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  color: white;
+}
+.inquiry-form h2 {
+  margin-top: 0;
+}
+.inquiry-form p,
+.inquiry-form h1 {
+  text-align: center;
+}
+.btn {
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-family: "Trebuchet MS";
+  cursor: pointer;
+  background-color: hsla(0, 100%, 52%, 0.959);
+  max-height: 50px;
+  margin-top: 13px;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.contact-form p,
+.contact-form h1,
+.contact-form h2 {
+  text-align: center;
+}
+
+.foot {
+  border-top: 1px solid grey;
+  padding-top: 10px;
+  margin-top: 5%; /* Initial margin */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+
+.foot p {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.foot img {
+  margin-top: 5px;
+}
+@media only screen and (max-width: 350px) {
+  .container1 span{
+    display: none;
+  }
+  .container1{
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 554px) {
+    .foot {
+        font-size: 10px;
+    }
+    .inquiry-form{
+      flex-wrap: wrap;
+      margin-top: -60px;
+    }
+    .contact-form{
+        flex-wrap: wrap;
+    }
+    .contact-form h1,.inquiry-form h1{
+        font-size: 2rem;
+    }
+    .contact-form p,.inquiry-form p{
+        font-size: .7rem;
+    }
+    .inquiry-form h2{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 650px) {
+  .btn{
+    padding: 6px 24px;
+  }
+  .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 300px;
+    background-color: black;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
+  }
+  nav a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+  .close-sidebar-button {
+    padding: 20px;
+    display: block;
+  }
+  .hr {
+    width: 1000px;
+  }
+  .open-sidebar-button {
+    display: block;
+    padding-top: 5px;
+  }
+  #sidebar-active:checked ~ .links-container {
+    right: 0;
+  }
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+}
